@@ -41,114 +41,50 @@
 
 .reveal ul {
   list-style: none;
-  margin: 1em 0;
-  padding-left: 1.8em;
-}
-
-.reveal ul li {
-  margin: 0.8em 0;
-  line-height: 1.8;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.reveal ul li i {
-  color: #42b983;
-  width: 1.2em;
-  text-align: center;
 }
 
 .reveal ul li::before {
-  display: none;
+  content: "•";
+  color: #42b983;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .reveal .highlight {
-  color: #42b983;
-  font-weight: 500;
-}
-
-.reveal .highlight-box {
-  background: rgba(66, 185, 131, 0.1);
-  border-left: 4px solid #42b983;
-  padding: 1em;
-  margin: 1em 0;
-  border-radius: 4px;
-}
-
-.reveal .highlight-box p {
-  margin: 0.5em 0;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.reveal .highlight-box i {
   color: #42b983;
 }
 
 .reveal .comparison-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin: 30px auto;
-  max-width: 1200px;
-  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
 }
 
 .reveal .feature-box {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  padding: 25px;
-  margin: 15px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  padding: 20px;
+  margin: 10px;
   transition: all 0.3s ease;
 }
 
-.reveal .feature-box.warning {
-  border-left: 4px solid #e74c3c;
-  background: rgba(231, 76, 60, 0.05);
-}
-
-.reveal .feature-box.success {
-  border-left: 4px solid #42b983;
-  background: rgba(66, 185, 131, 0.05);
-}
-
-.reveal .logo-item {
-  text-align: center;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  height: 100%;
-  transition: all 0.3s ease;
-}
-
-.reveal .logo-item:hover {
+.logo-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.reveal .logo-item.warning {
+.logo-item.warning {
   border-left: 4px solid #e74c3c;
-  background: rgba(231, 76, 60, 0.05);
 }
 
-.reveal .logo-item.success {
+.logo-item.success {
   border-left: 4px solid #42b983;
-  background: rgba(66, 185, 131, 0.05);
 }
 
-.reveal .logo-item.center {
+.logo-item.center {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
