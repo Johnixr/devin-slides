@@ -29,6 +29,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   overflow: visible;
+  transform-origin: top center;
 }
 
 .reveal .slides > section > section {
@@ -311,18 +312,19 @@
   text-align: center;
   width: 100%;
   font-size: 1.1em;
-  line-height: 1.6;
-  margin: 5px 0;
-  padding: 0 15px;
+  line-height: 1.8;
+  margin: 8px 0;
+  padding: 0 20px;
   word-break: keep-all;
   overflow-wrap: break-word;
   white-space: normal;
   text-justify: inter-ideograph;
-  word-spacing: 0.1em;
-  min-height: 2.4em;
+  word-spacing: 0.15em;
+  min-height: 2.8em;
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 0.05em;
 }
 
 .reveal .logo-item i {
