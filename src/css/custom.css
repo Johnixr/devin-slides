@@ -63,6 +63,17 @@
   margin: 20px 0;
 }
 
+.reveal .logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.reveal .logo-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .reveal .feature-box {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
