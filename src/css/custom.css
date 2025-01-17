@@ -18,8 +18,8 @@
 }
 
 .reveal .slides > section {
-  padding: 40px 20px;
-  min-height: 100vh;
+  padding: 20px 15px;
+  min-height: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -34,9 +34,9 @@
 
 .reveal .slides > section > section {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   height: auto;
-  padding: 20px;
+  padding: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
   align-items: center;
   overflow: visible;
   margin: 0;
-  transform: scale(0.95);
+  transform: scale(0.85);
   transform-origin: top center;
 }
 
@@ -165,12 +165,23 @@
   width: 100%;
   max-width: 900px;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 15px;
   transition: all 0.3s ease;
   overflow: visible;
-  text-align: center;
+  text-align: left;
+}
+
+.reveal .feature-box p {
+  margin: 0.5em 0;
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  letter-spacing: 0.05em;
+  padding: 0;
 }
 
 .reveal .feature-box.intro-box {
